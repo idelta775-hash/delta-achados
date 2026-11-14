@@ -47,6 +47,10 @@ h3{font-size:20px;line-height:1.19;letter-spacing:-.03em;margin:10px 0}.item p{m
 <div class="hint">Publicidade: podemos receber comissões por compras qualificadas. Preços e prazos variam — consulte o anúncio.</div>
 </div></header>
 <main class="wrap">
+<section id="natal-share-v513" aria-label="Compartilhar guia natalino" style="margin:24px 0 3px;padding:20px 24px;background:#fff1ec;border:1px solid #edcfcb;border-radius:18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+<div style="max-width:590px"><strong style="display:block;font-size:18px;color:#571b3c">🎄 Encontrou boas ideias? Compartilhe o guia.</strong><span style="font-size:13px;color:#795d6d">Envie a seleção para alguém que procura presentes. Compartilhamento voluntário, sem mensagens automáticas.</span></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a id="natal-share-whatsapp" href="https://wa.me/?text=%F0%9F%8E%84%20Luzes%2C%20%C3%A1rvore%20de%20Natal%20e%20ideias%20de%20presentes%3A%20veja%20a%20sele%C3%A7%C3%A3o%20Achadinhos%20da%20L%C3%ADvia%20e%20da%20Lara.%20Pre%C3%A7o%20e%20entrega%20devem%20ser%20conferidos%20em%20cada%20an%C3%BAncio.%20https%3A%2F%2Fidelta775-hash.github.io%2Fdelta-achados%2Fnatal-2026.html%3Futm_source%3Dwhatsapp%26utm_medium%3Dorganic_share%26utm_campaign%3Ddelta_natal2026_guide" rel="noopener noreferrer" target="_blank" style="background:#205f45;color:#fff;text-decoration:none;padding:13px 17px;border-radius:11px;font-size:13px;font-weight:800">Compartilhar no WhatsApp</a><button id="natal-share-copy" type="button" style="border:1px solid #c18f9d;border-radius:11px;background:#fff;padding:13px 17px;color:#571b3c;font-size:13px;font-weight:800;cursor:pointer">Copiar link</button></div><span id="natal-share-status" role="status" aria-live="polite" style="width:100%;font-size:12px;color:#694252"></span>
+</section>
 <section class="subhead"><h2>Escolha o presente ou a decoração.</h2><p>Produtos com anúncios específicos. Sem preços inventados: confira vendedor, modelo, voltagem, condições e frete para seu CEP na plataforma de compra.</p></section>
 <div class="filterbar" role="group" aria-label="Filtrar produtos">
 <button type="button" data-filter="all" aria-pressed="true">Todos os achadinhos</button>
@@ -94,6 +98,17 @@ h3{font-size:20px;line-height:1.19;letter-spacing:-.03em;margin:10px 0}.item p{m
 <section class="fineprint"><div class="wrap"><strong>Compre com informação.</strong> Cada botão abre voluntariamente o anúncio do Mercado Livre ou uma página de detalhes da DELTA que oferece o link oficial. Não finalizamos pagamentos aqui. A previsão de entrega, o valor e o estoque devem ser consultados diretamente no marketplace. Lívia Duarte e Lara Viana são apresentadoras virtuais.</div></section>
 <footer><div class="wrap">© 2026 DELTA Informática e Multimídia • <a href="./privacy.html">Privacidade</a> • <a href="./terms.html">Termos</a> • <a href="./index.html">Vitrine completa</a></div></footer>
 <script>
+document.querySelector("#natal-share-copy")?.addEventListener("click",async()=>{
+ const status=document.querySelector("#natal-share-status");
+ const link="https://idelta775-hash.github.io/delta-achados/natal-2026.html?utm_source=whatsapp&utm_medium=organic_share&utm_campaign=delta_natal2026_guide";
+ try{
+  if(!navigator.clipboard?.writeText)throw Error("clipboard_not_available");
+  await navigator.clipboard.writeText(link);
+  status.textContent="Link copiado. Compartilhe onde preferir.";
+ }catch(_){
+  status.textContent="Copie este endereço para compartilhar: "+link;
+ }
+});
 document.querySelectorAll("[data-filter]").forEach(btn=>btn.addEventListener("click",()=>{
  const k=btn.dataset.filter;
  document.querySelectorAll("[data-filter]").forEach(b=>b.setAttribute("aria-pressed",String(b===btn)));
