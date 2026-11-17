@@ -1,0 +1,8 @@
+{
+  "change": "WITHDRAW_LOW_QUALITY_VIDEO",
+  "reason": "User rejected audio/visual quality",
+  "preserve_guide": true,
+  "preserve_affiliate_link": true,
+  "archive_on_master": "D:\\gpt\\DELTA_AFFILIATE_AI\\campaigns\\kiwify_video_strategy_v447_20261109",
+  "publication_gate": "REFERENCED_CREATIVE_ONLY_AND_QC_HUMAN"
+}
