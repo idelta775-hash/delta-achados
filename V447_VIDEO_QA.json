@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "pass": true,
+      "video_and_captions": true,
+      "affiliate_target_preserved": true,
+      "JS_errors": 0
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "pass": true,
+      "video_and_captions": true,
+      "affiliate_target_preserved": true,
+      "JS_errors": 0
+    }
+  ],
+  "no_own_affiliate_clicks": true
+}
