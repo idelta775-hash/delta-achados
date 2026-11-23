@@ -1,8 +1,10 @@
+[Reading 153 lines from start (total: 153 lines, 0 remaining)]
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://idelta775-hash.github.io/delta-achados/natal-2026.html"><meta name="theme-color" content="#241124">
+<meta name="robots" content="noindex,nofollow,noarchive"><link rel="canonical" href="https://idelta775-hash.github.io/delta-achados/natal-2026.html"><meta name="theme-color" content="#241124">
 <title>Presentes e decoração de Natal 2026 | Achadinhos da Lívia e da Lara</title>
 <meta name="description" content="Guia de Natal da DELTA: luzes, árvores, brinquedos e presentes com fotografias reais e links de ofertas oficiais."><meta property="og:title" content="Presentes e decoração de Natal 2026 | Achadinhos da Lívia e da Lara"><meta property="og:description" content="Luzes, árvores, brinquedos e presentes de Natal com fotos reais e links específicos de compra."><meta property="og:type" content="website"><meta property="og:url" content="https://idelta775-hash.github.io/delta-achados/natal-2026.html">
 <style>
@@ -124,4 +126,32 @@ document.querySelectorAll("[data-filter]").forEach(btn=>btn.addEventListener("cl
  document.querySelectorAll(".item").forEach(card=>card.hidden=k!=="all"&&card.dataset.cat!==k);
 }));
 </script>
+
+<script>
+(function(){
+  const allowed=new Set(['direct','site','youtube','youtube_shorts','tiktok','instagram','instagram_reels','facebook','facebook_reels','pinterest','pinterest_pin','whatsapp_public','telegram_public']);
+  const params=new URLSearchParams(location.search);
+  function inferred(){
+    const r=(document.referrer||'').toLowerCase();
+    if(!r||r.includes(location.host))return 'direct';
+    if(r.includes('youtube'))return 'youtube';
+    if(r.includes('tiktok'))return 'tiktok';
+    if(r.includes('instagram'))return 'instagram';
+    if(r.includes('facebook'))return 'facebook';
+    if(r.includes('pinterest.'))return 'pinterest';
+    if(r.includes('google.'))return 'google';
+    if(r.includes('bing.'))return 'bing';
+    return 'external_unknown';
+  }
+  const src=(params.get('src')||inferred()).toLowerCase();
+  if(!allowed.has(src)){
+    document.querySelectorAll('a.buy').forEach(a=>a.remove());
+    document.documentElement.dataset.affiliateSourceBlocked='true';
+  }else{
+    document.documentElement.dataset.affiliateSourceBlocked='false';
+  }
+})();
+</script>
 </body></html>
+
+[executed on device: WIN-UBD7JFJUIRU (0fa76297-6b42-45c0-b77a-f00018123916)]
